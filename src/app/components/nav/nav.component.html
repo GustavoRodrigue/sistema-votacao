@@ -1,1 +1,46 @@
-<p>nav works!</p>
+<mat-drawer-container class="container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="side">
+        <img src="/src/assets/img/imagem-sidenav.png" alt="imagem">
+        <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">home</i>
+                Home
+            </a>
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">group</i>
+                Professores
+            </a>
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">groups</i>
+                Alunos
+            </a>
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">add_task</i>
+                Votação
+            </a> 
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">library_books</i>
+                Cursos
+            </a>
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">bookmark</i>
+                Turmas
+            </a>
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">person</i>
+                Conta
+            </a>
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">logout</i>
+                Logout
+            </a>
+        </mat-nav-list>
+    </mat-drawer>
+
+    <div class="sidenav-content">
+        <button class="menu mat-elevation-z8" mat-icon-button (click)="drawer.toggle()" >
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+
+</mat-drawer-container>
